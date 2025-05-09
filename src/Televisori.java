@@ -25,4 +25,4 @@ public class Televisori extends Prodotto {
     public void tv() {
         System.out.println("Congratulazioni il vostro televisore "+nome+" - "+marca+" è di dimensioni "+dimensioni+". Optional: "+smart);
     }
-}
+}//aggiungere commenti

@@ -24,5 +24,6 @@ public class Smartphone extends Prodotto {
     public void memoria(){
         System.out.println("Il prodotto "+nome+ " - Codice IMEI: "+imei+" vanta una memoria "+memoria);
     }
+    //aggiungere commenti
 
 }

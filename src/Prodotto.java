@@ -29,5 +29,5 @@ public class Prodotto {
         System.out.println("Prodotto: "+codice+" - "+nome+" marca: "+marca);
     }
 
-
+//aggiungere commenti
 }
