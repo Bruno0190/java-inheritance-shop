@@ -20,7 +20,7 @@ public class Prodotto {
     public void prezzoBase() {
         System.out.println("Il prezzo base è "+prezzo+" euro");
     }
-
+    //Sostituire i void, ritornando effettivamente qualcosa da poter utilizzare in un Main
     public void prezzoIvato() {
         System.out.println("Il prezzo ivato è "+(prezzo + (prezzo*iva/100))+" euro");
     }

@@ -11,7 +11,8 @@ public class Cuffie extends Prodotto {
 
     ArrayList<Boolean> cablaggi = new ArrayList<>(Arrays.asList(true, false));
 
-    public Cuffie(String nome, String marca, float prezzo, float iva){super(nome, marca, prezzo, iva);
+    public Cuffie(String nome, String marca, float prezzo, float iva){
+        super(nome, marca, prezzo, iva);
 
         Random randomico = new Random();
         

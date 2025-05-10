@@ -9,14 +9,14 @@ public class Smartphone extends Prodotto {
         super(nome, marca, prezzo, iva);
 
         Random randomico = new Random();
-        StringBuilder sigla = new StringBuilder(15);
+        StringBuilder siglaImei = new StringBuilder(15);
 
         for (int i = 0; i < 15; i++) {
             int cifra = randomico.nextInt(10);
-            sigla.append(cifra);
+            siglaImei.append(cifra);
         }
 
-        this.imei = sigla.toString();
+        this.imei = siglaImei.toString();
         this.memoria = memoria;
  
     }
