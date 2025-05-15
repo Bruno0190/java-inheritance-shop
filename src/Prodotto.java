@@ -9,24 +9,24 @@ public class Prodotto {
     public float iva;
 
     public Prodotto(String nome, String marca, float prezzo, float iva){
-        Random codice = new Random();
-        this.codice = codice.nextInt(999999);
+        Random rnd = new Random();
+        this.codice = rnd.nextInt(999999);
         this.nome = nome;
         this.marca = marca;
         this.prezzo = prezzo;
         this.iva = iva;   
     }
 
-    public void prezzoBase() {
-        System.out.println("Il prezzo base è "+prezzo+" euro");
-    }
-    //Sostituire i void, ritornando effettivamente qualcosa da poter utilizzare in un Main
-    public void prezzoIvato() {
-        System.out.println("Il prezzo ivato è "+(prezzo + (prezzo*iva/100))+" euro");
+    public String prezzoBase() {
+        return "Il prezzo base è "+prezzo+" euro";
     }
 
-    public void nomeEcodiceEmarca(){
-        System.out.println("Prodotto: "+codice+" - "+nome+" marca: "+marca);
+    public String prezzoIvato() {
+        return "Il prezzo ivato è "+(prezzo + (prezzo*iva/100))+" euro";
+    }
+
+    public String nomeEcodiceEmarca(){
+        return "Prodotto: "+codice+" - "+nome+" marca: "+marca;
     }
 
 //aggiungere commenti
