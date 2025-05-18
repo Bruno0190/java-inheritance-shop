@@ -30,4 +30,11 @@ public class Prodotto {
     }
 
 //aggiungere commenti
+public String getNome(){
+    return nome;
+}
+
+public String getMarca(){
+    return marca;
+}
 }

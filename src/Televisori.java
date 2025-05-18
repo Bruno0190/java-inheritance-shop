@@ -1,14 +1,14 @@
-import java.util.Random;
+//import java.util.Random;
 
 public class Televisori extends Prodotto {
 
     public int dimensioni;
-    public String smart;
+    public String opzione;
+    String [] scelta = {"smart", "no smart"};
 
-    // Array con possibili dimensioni dello schermo
+    /*
     int[] numeri = {32, 40, 43, 50, 55, 65, 75};
 
-    // Costruttore
     public Televisori(String nome, String marca, float prezzo, float iva, boolean optional) {
         super(nome, marca, prezzo, iva);
 
@@ -22,10 +22,27 @@ public class Televisori extends Prodotto {
         }
     }
 
-    // Metodo che descrive il televisore
     public String tv() {
         return "Congratulazioni, il vostro televisore " + nome + " - " + marca +
                " è di dimensioni " + dimensioni + ". Optional: " + smart;
     }
+    */
+
+
+    public Televisori(String nome, String marca, float prezzo, float iva, int dimensioni, String opzione) {
+        super(nome, marca, prezzo, iva);
+        this.dimensioni = dimensioni;
+        this.opzione = opzione;
+    }
+
+        //Fare l'Override
+    @Override
+    public String toString() {
+        return "Televisore: " + nome + " - " + marca + ", Dimensioni: " + dimensioni + " pollici, Tipo: " + opzione;
+    }
+
+
+
 }
+
 

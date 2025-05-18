@@ -24,6 +24,11 @@ public class Smartphone extends Prodotto {
     public String memoria(){
         return "Il prodotto "+nome+ " - Codice IMEI: "+imei+" vanta una memoria "+memoria;
     }
-    //aggiungere commenti
+
+    //Fare l'Override
+    @Override
+    public String toString(){
+        return "Smartphone - Nome: " + getNome() + ", Marca: " + getMarca() + ", Memoria: " + memoria + "GB";
+    }
 
 }
